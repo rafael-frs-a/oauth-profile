@@ -5,7 +5,7 @@ The frontend uses, among others, the following technologies:
 - TypeScript: for type-safety;
 - Tailwind CSS: for styling;
 - Next-translate: to support multiple languages;
-- Next-themes: used with Tailwind to support dark mode (very important feature!);
+- Next-themes: used with Tailwind to support dark mode (very important feature);
 - Nookies: for cookies management;
 - SWR: for helping with data fetching/revalidation and acting as a React Context API to share states across the application;
 - Axios: for HTTP requests;
@@ -19,7 +19,7 @@ The `/bin` folder contains bash files meant to be used with CI/CD pipelines. It 
 
 # Considerations
 
-Since TypeScript doesn't have a built-in way of checking/validating an generic object against an interface or type, I had two options when deciding how to represent backend types on the frontend:
+Since TypeScript doesn't have a built-in way of checking/validating a generic object against an interface or type, I had two options when deciding how to represent backend types on the frontend:
 1. Use `openapi-typescript` to autogenerate TypeScript interfaces out of the backend's OpenAPI schema and trust the backend returned responses would correctly follow their schemas;
 2. Use a form-validation package like `zod` to manually implement the expected backend schemas on frontend and use its built-in parsing methods to validate backend responses.
 

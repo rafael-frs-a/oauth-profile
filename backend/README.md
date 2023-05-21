@@ -2,10 +2,10 @@
 
 The backend uses, among others, the following technologies:
 - FastAPI: a fast Python framework for API development with great support to async IO operations, like HTTP requests and database communication. It also counts with built-in OpenAPI schema generation;
-- Postgres: due to previous experiences, its popularity, and useful features like JSON fields and [full-text-search](https://github.com/rafael-frs-a/django_memes#dependencies).
+- Postgres: as the database, due to previous experiences, its popularity, and useful features like JSON fields and [full-text-search](https://github.com/rafael-frs-a/django_memes#dependencies).
 - SQLModel: for database ORM;
 - Alembic: for managing database migrations;
-- [pip-tools](https://github.com/jazzband/pip-tools): to handle dependency files. Although as not convenient as `poetry`, it doesn't make it necessary to be added to the Docker image, since the `requirements.txt` file it generates can be installed with just `pip`;
+- [pip-tools](https://github.com/jazzband/pip-tools): to handle dependency files. Although not as convenient as `poetry`, it doesn't make it necessary to be added to the Docker image, since the `requirements.txt` file it generates can be installed with just `pip`;
 - Flake8: to lint files;
 - Bandit: to check the code for potential security vulnerabilities;
 - Mypy: to enforce type checking on all Python files;

@@ -26,7 +26,7 @@ class ApiResponse(GenericModel, typing.Generic[TData]):
 
     class Config:
         json_encoders = {
-            datetime: lambda v: v.isoformat("T") + "Z"
+            datetime: lambda v: v.isoformat('T') + 'Z'
         }
 
 
