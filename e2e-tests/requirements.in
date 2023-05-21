@@ -1,0 +1,8 @@
+flake8
+mypy
+pytest
+pytest-cov
+pytest-dotenv
+pytest-playwright
+python-slugify
+types-python-slugify

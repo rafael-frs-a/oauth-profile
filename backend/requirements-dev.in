@@ -1,0 +1,22 @@
+# Production packages
+fastapi
+uvicorn[standard]
+python-dotenv
+httpx
+validators
+pyjwt
+asyncpg
+psycopg2
+alembic
+sqlmodel
+sqlalchemy-utils
+cryptography
+
+# Test packages
+flake8
+mypy
+bandit
+pytest
+pytest-cov
+pytest-asyncio
+respx

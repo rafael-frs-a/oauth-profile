@@ -1,0 +1,10 @@
+{
+  "defaultLocale": "en-US",
+  "locales": ["en-US", "pt-BR"],
+  "pages": {
+    "*": ["common", "404"],
+    "/": ["home"],
+    "/login": ["login"],
+    "/profile": ["profile"]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "en-US": "Inglês (EUA)",
+  "pt-BR": "Português (Brasil)",
+  "home": "Início",
+  "login": "Entrar",
+  "logout": "Sair",
+  "profile": "Perfil",
+  "serverUnavailable": "Servidor não disponível",
+  "invalidServerResponse": "Resposta do servidor inválida"
+}

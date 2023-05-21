@@ -1,0 +1,10 @@
+{
+  "en-US": "English (USA)",
+  "pt-BR": "Portuguese (Brazil)",
+  "home": "Home",
+  "login": "Login",
+  "logout": "Logout",
+  "profile": "Profile",
+  "serverUnavailable": "Server not available",
+  "invalidServerResponse": "Invalid server response"
+}

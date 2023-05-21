@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+
+# Python local virtualenv folder
+venv/
+
+# VS Code
+.vscode/
+.mypy_cache/
+
+# Pytest
+.pytest/
+
+# Coverage
+htmlcov/
+
+# Local env files
+.env*

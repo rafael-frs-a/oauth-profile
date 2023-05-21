@@ -1,0 +1,46 @@
+services:
+  postgres:
+    extends:
+      file: base.yml
+      service: postgres
+    restart: always
+  backend:
+    extends:
+      file: base.yml
+      service: backend
+    build:
+      context: ./backend
+      target: prod
+    command: >
+      sh -c "/app/backend/bin/create_db.sh &&
+             /app/backend/bin/migrate.sh &&
+             /app/backend/bin/start.sh"
+    depends_on:
+      postgres:
+        condition: service_healthy
+  frontend:
+    extends:
+      file: base.yml
+      service: frontend
+    build:
+      context: ./frontend
+      target: prod
+    command: >
+      bash -c "/app/frontend/bin/start.sh"
+    depends_on:
+      backend:
+        condition: service_healthy
+  # e2e-tests should run as close from production as possible
+  # only changing the environment variables
+  e2etests:
+    env_file:
+      - .env
+    build:
+      context: ./e2e-tests
+      target: prod
+    volumes:
+      - ./e2e-tests:/app/e2e-tests
+    tty: true
+    depends_on:
+      frontend:
+        condition: service_healthy

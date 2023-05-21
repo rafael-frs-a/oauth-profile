@@ -1,0 +1,27 @@
+services:
+  postgres:
+    extends:
+      file: base.yml
+      service: postgres
+  backend:
+    extends:
+      file: base.yml
+      service: backend
+    build:
+      context: ./backend
+      target: dev
+    command: >
+      sh -c "/app/backend/bin/start.sh --reload"
+    volumes:
+      - ./backend:/app/backend
+  frontend:
+    extends:
+      file: base.yml
+      service: frontend
+    build:
+      context: ./frontend
+      target: dev
+    command: >
+      bash -c "/app/frontend/bin/start.sh dev"
+    volumes:
+      - ./frontend:/app/frontend

@@ -1,0 +1,4 @@
+[run]
+data_file=.pytest/.coverage
+concurrency=greenlet,thread
+omit=src/cli/*
