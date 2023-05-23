@@ -21,3 +21,11 @@ At the root, there are three `.yml` files used for setting up the application se
     - Production deploy.
 
 More details about each service can be found in their readmes.
+
+# Continuation
+
+Possible future improvements might include:
+- Set up a CI/CD pipeline with GitHub Actions, AWS Free Tier, or another;
+- Set up [sops](https://github.com/mozilla/sops) to manage and encrypt multiple environment variables files, with at least one for dev/test/end-to-end test and one for production;
+- Add structured logging to backend;
+- Add security check for dependencies using [safety](https://github.com/pyupio/safety), `npm audit`, or GitHub's Dependabot.
