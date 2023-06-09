@@ -29,3 +29,7 @@ Possible future improvements might include:
 - Set up [sops](https://github.com/mozilla/sops) to manage and encrypt multiple environment variables files, with at least one for dev/test/end-to-end test and one for production;
 - Add structured logging to backend;
 - Add security check for dependencies using [safety](https://github.com/pyupio/safety), `npm audit`, or GitHub's Dependabot.
+
+# Code quality
+
+Codebeat quality review available on [this link](https://codebeat.co/projects/github-com-rafael-frs-a-oauth-profile-main).
