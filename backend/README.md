@@ -19,3 +19,5 @@ The `/bin` folder contains bash files meant to be used with CI/CD pipelines. It 
 - `migrate.sh`: runs migrations against configured and existing database;
 - `run_tests.sh`: runs pytest tests;
 - `start.sh`: starts API server.
+
+![image](https://github.com/rafael-frs-a/oauth-profile/assets/76019940/dfeb1540-c1ff-4683-a96e-492fdc5cd25d)
