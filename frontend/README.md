@@ -17,6 +17,9 @@ The `/bin` folder contains bash files meant to be used with CI/CD pipelines. It 
 - `check_types.sh`: uses TypeScript to check type-safety on files;
 - `start.sh`: starts frontend server.
 
+![image](https://github.com/rafael-frs-a/oauth-profile/assets/76019940/7a6ef50e-c177-4a10-a311-eaa10664bccc)
+
+
 # Considerations
 
 Since TypeScript doesn't have a built-in way of checking/validating a generic object against an interface or type, I had two options when deciding how to represent backend types on the frontend:
